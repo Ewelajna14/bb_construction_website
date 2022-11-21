@@ -3,7 +3,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--color-grey);
+    background: var(--color-black);
     padding: 1rem 2rem;
 
 }
@@ -12,6 +12,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    color: var(--color-golden);
 }
 
 .app__navbar-links{
