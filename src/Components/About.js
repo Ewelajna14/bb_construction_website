@@ -1,4 +1,5 @@
 import React from 'react'
+import './About.css'
 
 export default function About() {
     return (
@@ -13,6 +14,8 @@ export default function About() {
         <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
         <button type="button" className="custom__button">Know More</button>
       </div>
+
+      <div></div>
 
 
       <div className="app__aboutus-content_history">
