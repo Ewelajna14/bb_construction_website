@@ -5,6 +5,7 @@ import Header from './Header';
 import About from './About';
 import Gallery from './Gallery';
 import FindUs from './FindUs';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
      <About/>
      <Gallery/>
      <FindUs/>
+     <Footer/>
     </div>
   );
 }
