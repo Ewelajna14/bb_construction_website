@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 import Header from './Header';
 import About from './About';
 import Gallery from './Gallery';
-import FindUs from './FindUs';
+import Form from './Form';
 import Footer from './Footer';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Header/>
      <About/>
      <Gallery/>
-     <FindUs/>
+     <Form/>
      <Footer/>
     </div>
   );
