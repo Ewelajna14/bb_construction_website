@@ -15,8 +15,6 @@ export default function About() {
         <button type="button" className="custom__button">Know More</button>
       </div>
 
-      <div></div>
-
 
       <div className="app__aboutus-content_history">
         <h1 className="headtext__cormorant">What we do</h1>
