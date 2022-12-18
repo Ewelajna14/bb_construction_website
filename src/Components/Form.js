@@ -26,9 +26,9 @@ export default function Form() {
                   <input type="text" value={lname} onChange={(event)=>setlName(event.target.value)}></input><br></br>
                   <label>Email</label>
                   <input type="email" value={email} onChange={(event)=>setEmail(event.target.value)}></input>
-                  <labe>Phone</labe>
+                  <label>Phone</label>
                   <input type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value={phone} onChange={(event)=>setPhone(event.target.event)}></input><br></br>
-                  <labe>Message</labe>
+                  <label>Message</label>
                   <textarea value={message} onChange={(event)=>setMessage(event.target.value)}></textarea><br></br>
 
                   <button type="submit" className="custom__button" style={{ marginTop: '2rem' }}>SEND</button>

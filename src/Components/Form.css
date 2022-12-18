@@ -6,6 +6,10 @@ form.contact_form {
     width: 80%;
 }
 
+form.contact_form label {
+
+}
+
 form.contact_form input {
     width: 30%;
     padding: 10px;
@@ -20,4 +24,5 @@ form.contact_form textarea {
     outline: 0;
     border: 1px solid;
     font-size: 20px;
+    resize:none;
 }
