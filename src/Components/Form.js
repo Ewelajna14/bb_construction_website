@@ -17,8 +17,9 @@ export default function Form() {
             <div className="app__wrapper_info">
             <SubHeading title="Contact" />
             <h1 className="headtext__cormorant" style={{ marginBottom: '3rem' }}>Get in Touch</h1>
-            <div className="app__wrapper-content">
-                <form>
+            <div  /*"app__wrapper-content*/> 
+            <div className='contact_form_container'>
+                <form className='contact_form'>
                   <label>First Name</label>
                   <input type="text" value={fname} onChange={(event)=>setfName(event.target.value)}></input>
                   <label>Last Name</label>
@@ -32,6 +33,7 @@ export default function Form() {
 
                   <button type="submit" className="custom__button" style={{ marginTop: '2rem' }}>SEND</button>
                 </form>
+                </div>
         </div>
     </div>
 
