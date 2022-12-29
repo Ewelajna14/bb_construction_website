@@ -15,6 +15,34 @@ export default function Form() {
   const [message, setMessage] = useState("")
 
 
+  function handlePhone(event){
+
+    const formattedPhoneNumber = formatPhoneNumber(event.target.value)
+
+    setPhone(formattedPhoneNumber)
+
+  }
+
+  function formatPhoneNumber(value){
+
+    //return empty if nothing changed
+    if (!value) return value
+
+     // clean the input for any non-digit values.
+     const phoneNumber = value.replace(/[^\d]/g, '');
+     const phoneNumberLength = phoneNumber.length;
+     if (phoneNumberLength < 4) return phoneNumber;
+     if (phoneNumberLength < 7) {
+      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+    }
+    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
+      3,
+      6
+    )}-${phoneNumber.slice(6, 10)}`;
+
+  }
+
+
     return (
         <div className="app__bg app__wrapper section__padding" id="contact">
             <div className="app__wrapper_info">
@@ -41,14 +69,14 @@ export default function Form() {
                   <label><MdEmail/>Email</label>
                   </div>
                   <div className="input-group">
-                  <input type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value={phone} onChange={(event)=>setPhone(event.target.event)} required></input>
+                  <input type="tel" value={phone} onChange={(event)=>handlePhone(event)} required></input>
                   <label><BsFillTelephoneFill/>Phone</label>
                   </div>
                     
                   </div>
                  
                   <div className="input-group">
-                  <textarea value={message} onChange={(event)=>setMessage(event.target.value)} required></textarea>
+                  <textarea rows="5" value={message} onChange={(event)=>setMessage(event.target.value)} required></textarea>
                   <label><AiFillMessage/>Message</label>
                   </div>
 
