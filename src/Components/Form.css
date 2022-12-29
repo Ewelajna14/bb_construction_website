@@ -14,35 +14,42 @@
 
 input, textarea{
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     outline: 0;
-    border:  1px solid black;
+    border:  1px solid white;
     background: transparent;
     font-size: 15px;
     resize:none;
 }
 
 label{
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    line-height: 29.9px;
+    font-size: 20px;
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    padding: 10px;
-    color: black;
+    padding: 5px;
     transition: 0.2s;
 }
 
 input:focus~label,
 input:valid~label{
     top: -35px;
-    font-size: 14px;
+    font-size: 18px;
 
 }
 
 textarea:focus~label,
 textarea:valid~label{
     top: -35px;
-    font-size: 14px;
+    font-size: 18px;
 
 }
 
@@ -58,18 +65,12 @@ textarea:valid~label{
 
 
 
-/*form.contact_form input {
-    padding: 10px;
-    outline: 0;
-    border: 1px solid;
-    font-size: 20px;
-}
+@media screen and (max-width: 650px){
+    .row{
+        display: block;
+     
+    }
 
-form.contact_form textarea {
-    width: 60%;
-    padding: 20px;
-    outline: 0;
-    border: 1px solid;
-    font-size: 20px;
-    resize:none;
-}*/
+
+   
+}
