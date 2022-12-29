@@ -23,7 +23,7 @@ const scrollRef = React.useRef(null);
     }
   };
     return (
-        <div className="app__gallery flex__center">
+        <div className="app__gallery flex__center" id="services">
         <div className="app__gallery-content">
           <SubHeading title="Instagram" />
           <h1 className="headtext__cormorant">Photo Gallery</h1>
