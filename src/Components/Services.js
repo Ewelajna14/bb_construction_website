@@ -1,6 +1,7 @@
 import React from 'react';
 import './Services.css';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import {MdOutlineConstruction} from 'react-icons/md';
 import SubHeading from './SubHeading';
 
 import basement from '../images/basement.jpg'
@@ -35,7 +36,7 @@ const scrollRef = React.useRef(null);
             {[basement, baathroom, living_room, kitchen].map((image, index) => (
               <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
                 <img src={image} alt="gallery_image" />
-                <BsInstagram className="gallery__image-icon" />
+                <MdOutlineConstruction className="gallery__image-icon" />
               </div>
             ))}
           </div>
