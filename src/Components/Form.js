@@ -42,6 +42,42 @@ export default function Form() {
 
   }
 
+  const sendEmail =(event)=>{
+    event.preventDefault()
+
+    const mailerInfo ={
+      fname,
+      lname,
+      email,
+      phone,
+      message
+    }
+
+    fetch("http://localhost:3001/send", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({mailerInfo}),
+    })
+    .then((res) => res.json())
+     .then((res) => {
+      if (res.status === "success") {
+        alert("Message Sent");
+      } else if (res.status === "fail") {
+        alert("Message failed to send");
+      }
+     })
+     .then(()=>{
+      setfName("")
+      setlName("")
+      setEmail("")
+      setPhone("")
+      setMessage("")
+     })
+
+  }
+
 
     return (
         <div className="app__bg app__wrapper section__padding" id="contact">
@@ -50,7 +86,7 @@ export default function Form() {
             <h1 className="headtext__cormorant" style={{ marginBottom: '3rem' }}>Get in Touch</h1>
             
             <div className='contact_form_container'>
-                <form>
+                <form onSubmit={(event)=>sendEmail(event)}>
                   <div className="row">
                     
                   <div className="input-group">

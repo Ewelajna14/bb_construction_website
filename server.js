@@ -2,12 +2,11 @@ const port = 3001;
 const express = require("express");
 const nodemailer = require("nodemailer");
 const app = express();
+const cors = require("cors");
 require("dotenv").config();
 
-app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`);
-   });
-
+app.use(express.json());
+app.use(cors());
 
    let transporter = nodemailer.createTransport({
     service: 'outlook',
@@ -28,17 +27,27 @@ app.listen(port, () => {
     let mailOptions = {
         from: "castaneis@outlook.com",
         to: process.env.EMAIL,
-        subject: "Nodemailer API",
-        text: "Hi from your nodemailer API",
+        subject: `Message from: ${req.body.mailerInfo.fname + ' ' + req.body.mailerInfo.lname }`,
+        text: `${req.body.mailerInfo.message + " " + req.body.mailerInfo.email + " "+ req.body.mailerInfo.phone}`,
        };
 
 
-   transporter.sendMail(mailOptions, function (err, data) {
-    if (err) {
-      console.log("Error " + err);
-    } else {
-      console.log("Email sent successfully");
-    }
-   });
+       transporter.sendMail(mailOptions, function (err, data) {
+        if (err) {
+          res.json({
+            status: "fail",
+          });
+        } else {
+          console.log("== Message Sent ==");
+          res.json({
+            status: "success",
+          });
+        }
+      })
 
 })
+
+
+app.listen(port, () => {
+ console.log(`Server is running on port: ${port}`);
+});
