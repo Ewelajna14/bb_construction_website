@@ -28,7 +28,8 @@ app.use(cors());
         from: "castaneis@outlook.com",
         to: process.env.EMAIL,
         subject: `Message from: ${req.body.mailerInfo.fname + ' ' + req.body.mailerInfo.lname }`,
-        text: `${req.body.mailerInfo.message + " " + req.body.mailerInfo.email + " "+ req.body.mailerInfo.phone}`,
+        html: `<p>Message: ${req.body.mailerInfo.message}</p><p>Email: ${req.body.mailerInfo.email} </p><p> Phone: ${req.body.mailerInfo.phone}</p>`
+        //text: `${req.body.mailerInfo.message + " " + req.body.mailerInfo.email + " "+ req.body.mailerInfo.phone}`,
        };
 
 

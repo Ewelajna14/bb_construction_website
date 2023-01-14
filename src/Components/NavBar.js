@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
 import {GiHamburgerMenu} from 'react-icons/gi';
-import {FaWrench} from 'react-icons/fa'
 import {MdOutlineConstruction} from 'react-icons/md';
 import './Navbar.css'
 
