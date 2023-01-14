@@ -1,0 +1,50 @@
+.scroll_button{
+    background-color: transparent;
+    border: none;
+    position: fixed; 
+    width: 30px;
+    height: 30px;
+    left: 95%;
+    bottom: 40px;
+    height: 20px;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    color: blue;   
+
+}
+
+
+@media screen and (min-width: 2000px) {
+
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .scroll_button{
+        left: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .scroll_button{
+        width:15px;
+        height:15px;
+        left: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .scroll_button{
+        width:15px;
+        height:15px;
+        left: 86%;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .scroll_button{
+        width:15px;
+        height:15px;
+        left: 86%;
+    }
+  }
