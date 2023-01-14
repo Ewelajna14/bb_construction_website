@@ -5,6 +5,7 @@ import './Form.css'
 import {BsPenFill, BsFillTelephoneFill} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md'
 import {AiFillMessage} from 'react-icons/ai'
+import { BsArrowTopShort} from 'react-icons/bs';
 
 export default function Form() {
 
@@ -118,13 +119,11 @@ export default function Form() {
 
                   <button type="submit" className="custom__button" style={{ marginTop: '2rem' }}>SEND</button>
                 </form>
+         
                 </div>
         
-    </div>
+        </div>
 
-    <div className="app__wrapper_img">
-      <img></img>
-    </div>
   </div>
     )
 }
