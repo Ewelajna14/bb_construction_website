@@ -1,10 +1,13 @@
 .app__header{
     background-color: var(--color-black);
+    background-image: url('../images/background_4.jpg');
+    background-size: cover; 
 }
+
 
 .app__header-h1{
     font-family: var(--font-base);
-    color: var(--color-golden);
+    color: var(--color-black);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     line-height: 10vw;
