@@ -6,12 +6,13 @@
 
 
 .app__header-h1{
-    font-family: var(--font-base);
+    /*font-family: var(--font-base);*/
+    font-family: 'Varela Round', sans-serif;
     color: var(--color-black);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    line-height: 10vw;
-    font-size: 8vw;
+    line-height: 8vw;
+    font-size: 6vw;
     word-wrap: break-word;
 }
 
