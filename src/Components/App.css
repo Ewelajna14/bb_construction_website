@@ -10,7 +10,7 @@
 
 .app__bg {
   /*background: url('../images/bg.png');*/
-  background-color: gray;
+  background-color:#464646;
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -54,7 +54,8 @@
 }
 
 .custom__button {
-  background-color: var(--color-crimson);
+  background-color: #E3F2FD;
+  border-color: black;
     color: var(--color-black);
     font-family: var(--font-base);
     font-weight: 700;
@@ -86,7 +87,7 @@
   letter-spacing: 0.04em;
   text-transform: capitalize;
   line-height: 28px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .headtext__cormorant {

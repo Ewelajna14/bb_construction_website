@@ -5,7 +5,6 @@ import './Form.css'
 import {BsPenFill, BsFillTelephoneFill} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md'
 import {AiFillMessage} from 'react-icons/ai'
-import { BsArrowTopShort} from 'react-icons/bs';
 
 export default function Form() {
 

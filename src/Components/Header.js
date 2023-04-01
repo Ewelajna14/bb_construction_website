@@ -2,7 +2,7 @@ import React from 'react'
 import SubHeading from './SubHeading'
 import './Header.css'
 
-import background from '../images/background.jpg'
+import background from '../images/bg_new.jpg'
 
 function Header() {
     return (

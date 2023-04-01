@@ -1,6 +1,6 @@
 import React from 'react';
 import './Services.css';
-import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import {MdOutlineConstruction} from 'react-icons/md';
 import SubHeading from './SubHeading';
 
