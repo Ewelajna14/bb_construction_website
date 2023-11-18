@@ -16,16 +16,16 @@ input, textarea{
     width: 100%;
     padding: 20px;
     outline: 0;
-    border:  2px solid white;
+    border:  2px solid black;
     background: transparent;
     font-size: 16px;
     resize:none;
-    color: white;
+    color: black;
 }
 
 label{
     font-family: var(--font-base);
-    color: var(--color-white);
+     color: var(--color-black); 
     font-weight: 700;
     letter-spacing: 0.04em;
     text-transform: capitalize;

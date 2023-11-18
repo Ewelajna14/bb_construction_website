@@ -10,7 +10,7 @@
 
 .app__bg {
   /*background: url('../images/bg.png');*/
-  background-color:#464646;
+  background-color:#dad3cd;
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -54,7 +54,7 @@
 }
 
 .custom__button {
-  background-color: #E3F2FD;
+  background-color:#7f9e82;
   border-color: black;
     color: var(--color-black);
     font-family: var(--font-base);
@@ -64,14 +64,16 @@
     font-size: 16px;
     padding: 0.5rem 1.5rem;
     border-radius: 1px;
+    margin-top: 1rem;
     border: none;
     outline: none;
     cursor: pointer;
 }
 
 .p__cormorant {
-  font-family: var(--font-base);
-  color: var(--color-white);
+  /*font-family: var(--font-base);*/
+  font-family: 'Oswald', sans-serif;
+  color: var(--color-black);
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -81,8 +83,9 @@
 }
 
 .p__opensans {
-  font-family: var(--font-alt);
-  color: var(--color-white);
+  /* font-family: var(--font-alt); */
+  font-family: 'Oswald', sans-serif;
+  color: var(--color-black);
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -91,8 +94,10 @@
 }
 
 .headtext__cormorant {
-  font-family: var(--font-base);
-  color: var(--color-golden);
+  /* font-family: var(--font-base);
+  color: var(--color-golden); */
+  font-family:'Oswald', sans-serif; 
+  color:var(--color-black);
   font-size: 64px;
   line-height: 83.2px;
   letter-spacing: 0.04em;

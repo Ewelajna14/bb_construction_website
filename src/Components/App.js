@@ -1,5 +1,6 @@
 
 import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import Header from './Header';
 import About from './About';
@@ -10,15 +11,15 @@ import ScrollButton from './ScrollButton';
 
 function App() {
   return (
-    <div>
-      <NavBar/>
-      <ScrollButton/>
-      <Header/>
-     <About/>
-     <Services/>
-     <Form/>
-     <Footer/>
-    </div>
+      <div>
+        <NavBar/>
+        <ScrollButton/>
+        <Header/>
+        <About/>
+        <Services/>
+        <Form/>
+        <Footer/>
+      </div>
   );
 }
 

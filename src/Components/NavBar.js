@@ -6,7 +6,7 @@ import './Navbar.css'
 
 import bb_logo from '../images/bb_logo.png'
 import bb_logo_big from '../images/bb_logo_big.png'
-import bb_logo_yellow from '../images/bb_logo_yellow.png'
+import bb_logo_black from '../images/black_logo.png.png'
 
 export default function NavBar() {
 
@@ -15,7 +15,7 @@ export default function NavBar() {
     return (
         <nav className='app__navbar' id="navbar">
             <div className='app__navbar-logo'>
-                <img src={bb_logo_big}></img>
+                <img src={bb_logo_black}></img>
             </div>
             <ul className='app__navbar-links'>
                 <li className='p__opensans'><a href='#home'>Home</a></li>

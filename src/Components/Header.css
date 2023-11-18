@@ -7,7 +7,7 @@
 
 .app__header-h1{
     /*font-family: var(--font-base);*/
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Oswald', sans-serif;
     /*text-shadow: 2px 2px 5px rgba(0,0,0,0.5);*/
     padding-top: 10px;
    color: var(--color-black);
@@ -21,4 +21,9 @@
 
 .app__header-img img{
     width: 80%;
+}
+
+.header_text{
+    font-family: 'Oswald', sans-serif;  
+    font-weight: bold; 
 }
