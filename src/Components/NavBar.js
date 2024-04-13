@@ -6,7 +6,8 @@ import './Navbar.css'
 
 import bb_logo from '../images/bb_logo.png'
 import bb_logo_big from '../images/bb_logo_big.png'
-import bb_logo_black from '../images/black_logo.png.png'
+// import bb_logo_black from '../images/black_logo.png.png'
+import bb_logo_black from '../images/logo.svg.svg'
 
 export default function NavBar() {
 
@@ -29,16 +30,16 @@ export default function NavBar() {
             <a href="/" className='p__opensans'>Quote</a>
             </div>
             <div className='app__navbar-smallscreen'>
-                <GiHamburgerMenu color="white" fontSize={27} onClick={()=>setToggleMenu(true)}/>
+                <GiHamburgerMenu color="black" fontSize={27} onClick={()=>setToggleMenu(true)}/>
 
                  {toggleMenu && (
                 <div className='app__navbar-smallscreen_overlay flex_center slide-bottom'>
                     <MdOutlineConstruction fontSize={27} className="overlay__close" onClick={()=>setToggleMenu(false)}/>
                     <ul className='app__navbar-smallscreen_links'>
-                        <li className='p__opensans'><a href='#home'>Home</a></li>
-                        <li className='p__opensans'><a href='#about'>About</a></li>
-                        <li className='p__opensans'><a href='#services'>Services</a></li>
-                        <li className='p__opensans'><a href='#contact'>Contact</a></li>
+                        <li className='p__opensans'><a href='#home' onClick={()=>setToggleMenu(false)}>Home</a></li>
+                        <li className='p__opensans'><a href='#about' onClick={()=>setToggleMenu(false)}>About</a></li>
+                        <li className='p__opensans'><a href='#services' onClick={()=>setToggleMenu(false)}>Services</a></li>
+                        <li className='p__opensans'><a href='#contact' onClick={()=>setToggleMenu(false)}>Contact</a></li>
                     </ul>
                 </div>
                 )}

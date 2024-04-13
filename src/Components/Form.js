@@ -82,7 +82,7 @@ export default function Form() {
     return (
         <div className="app__bg app__wrapper section__padding" id="contact">
             <div className="app__wrapper_info">
-            <SubHeading title="Contact" />
+            {/* <SubHeading title="Contact" /> */}
             <h1 className="headtext__cormorant" style={{ marginBottom: '3rem' }}>Get in Touch</h1>
             
             <div className='contact_form_container'>

@@ -64,7 +64,7 @@
    left:0;
    width: 100%;
    height: 100vh;
-   background: var(--color-black);
+   background: #dad3cd;
    transition: 0.5s ease;
    flex-direction: column;
    z-index: 5;
@@ -73,7 +73,7 @@
 
 .app__navbar-smallscreen_overlay .overlay__close{
     font-size: 27px;
-    color: var(--color-golden);
+    color: var(--color-black);
     cursor: pointer;
     position: absolute;
     top: 20px;
@@ -88,14 +88,15 @@
 .app__navbar-smallscreen_links li {
     margin: 2rem;
     cursor: pointer;
-    color: var(--color-golden);
+    color: var(--color-black);
     font-size: 2rem;
     text-align: center;
+    font-weight: bold;
     font-family: var(--font-base);
 }
 
 .app__navbar-smallscreen_links li:hover {
-    color: var(--color-black);
+    color: #7f9e82;
 }
 
 @media screen and (max-width: 2000px){

@@ -30,7 +30,7 @@ const scrollRef = React.useRef(null);
           <SubHeading title="BB Construction" />
           <h1 className="headtext__cormorant">Services</h1>
           <p className="p__opensans" style={{ /*color: '#AAAAAA',*/ marginTop: '2rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
-          <button type="button" className="custom__button" onClick={Services_details}>View More</button>
+          <button type="button" className="custom__button">View More</button>
         </div>
         <div className="app__gallery-images">
           <div className="app__gallery-images_container" ref={scrollRef}>

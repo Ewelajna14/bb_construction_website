@@ -11,7 +11,12 @@ export default function About() {
     <div className="app__aboutus-content flex__center">
       <div className="app__aboutus-content_about">
         {/* <h1 className="headtext__cormorant">About Us</h1> */}
-        <p className="p__opensans">Do you have a home in need of a makeover? Let our experienced team take care of all necessary repairs. We offer reliable, cost-effective solutions to keep your house looking beautiful and functioning the way it should. Our professionals can tackle any job—from small fixes to full remodels—with efficiency and precision. Don’t hesitate to contact us today for expert repair services at an affordable price!</p>
+        <p className="p__opensans"><strong>Do you have a home in need of a makeover? 
+          Let our experienced team take care of all necessary repairs.</strong><br></br>
+          We offer reliable, cost-effective solutions to keep your house looking beautiful and functioning the way it should.<br></br> 
+          Our professionals can tackle any job—from small fixes to full remodels—with efficiency and precision.<br></br>
+          Don’t hesitate to contact us today for expert repair services at an affordable price!
+        </p>
         {/* <button type="button" className="custom__button">Know More</button> */}
       </div>
 
